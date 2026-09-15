@@ -1,6 +1,6 @@
 # swaggo-demo
 
-Projeto mínimo em [Go](https://go.dev) para demonstrar geração de documentação utilizando [swaggo](https://github.com/swaggo/swag). 
+Projeto mínimo em [Go](https://go.dev) para demonstrar geração de documentação utilizando [swaggo](https://github.com/swaggo/swag).
 
 ## Pre-requisitos
 
@@ -16,21 +16,23 @@ Garanta que `$GOPATH/bin` (ou `$HOME/go/bin`) esteja no seu PATH para o comando 
 ## Passo a passo
 
 ```bash
-# 1. baixar dependencias
+# 1. clonar repositório
+git clone https://github.com/lucasmolinari/hands-on-arq-apis && cd hands-on-arq-apis
+
+# 2. baixar dependencias
 go mod tidy
 
-# 2. gerar a pasta docs/ a partir dos comentários no código
+# 3. gerar a pasta docs/ a partir dos comentários no código
 swag init
 
-# 3. rodar a API
+# 4. rodar a API
 go run main.go
 ```
 
 Depois, acesse:
 
-- Swagger UI: http://localhost:8080/swagger/index.html
-- JSON gerado: http://localhost:8080/swagger/doc.json
-
+- Swagger UI: <http://localhost:8080/swagger/index.html>
+- JSON gerado: <http://localhost:8080/swagger/doc.json>
 
 ## Arquivos Importantes
 
